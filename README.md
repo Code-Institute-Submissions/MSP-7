@@ -242,13 +242,13 @@ The subsections detail the proposed approach for testing of the final product. D
 A formal round of unit testing will not be conducted for this project. Instead, there will be a form of self-peer review whereby code writing will occur on day one and code review and refactoring will occur on the following day.
 This will reduce the effect of reading what should be there instead of what is actually there.
 
-## Functionality
+## Functionality/User Testing
  
 A once a stable working prototype each page is available the code will be validated via the W3C html validator, the CSS jigsaw and the JavaScript Jshint.
 
 At regular intervals this validation will occur.
 
-## User Functionality
+## User Acceptance Testing
  
 User acceptance testing will be conducted on an ongoing basis. Prior to each git push, an exploratory testing session will occur via the GUI interface.
 
