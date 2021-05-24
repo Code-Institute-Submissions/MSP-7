@@ -1,15 +1,9 @@
 # Personal Website
-The purpose of Milestone Project 2 is to create a simple website full of time filling activities.
-
-The website will be called "Mind Candy".
-
+The purpose of Milestone Project 2 is to create a 
 # Project Summary
 
 The Project will enable a user to:
--	View local weather
--	View top articles from a selection of popular websites (news/tech)
-- 	Links to mindfullness/meditation videos (youtube)
--	A couple of mini games (suduko, slot machines)
+
 
 
 ## Benefits and Rational
@@ -28,13 +22,7 @@ Business Case User stories:
 -	As a Visually impaired user I want to know that all non-text elements have planned alt text equivalents
 -	As a User I want to easily identify which page of the site I am on at any given time
 -	As a User I want to be able to quickly view the weather for my local area
-- 	As a User I want to be able to change the location of the weather information being provided
--	As a User I want to be able to view the top "7" articles from the most popular local news site
--	As a User I want to be able to select viarious article suppliers (a selection)
-- 	As a User I want to be able to access to meditation video/music, both on the site, and redirection to the content origin
--	As a User I want to be able to play the mini game "suduko"
--	As a User I want to be able to play the mini game "slot machine"
-- 	As a User, on the landing page, I want a snap shot view of the various four widgets (weather, news, meditation, games) 
+- As a User I want to be able to change the location of the weather information being provided 
 
 Functional Developer stories:
 -	As a Developer I want all external links to open in a new browser tab
@@ -60,24 +48,13 @@ Functional Developer stories:
 The following are a list of design aspects that must be maintained throughout the site. 
 
 Header will consist of:
-- Site Title "Mind Candy" with a customised logo
+- 
 Table of Contents / Navigation bar.
-- Horizontally displayed, directly under the header.
-- Each Option will be a different (light colour).
-- Each option will appear darker when user is on that page (or hovers mouse over).
-- Box Shaped.
-- Will condense to a hamburger option on smaller devices
+- 
 Body of page
-- Will be a lighter/simple background to enable easy reading of content.
-- Will appear directly under the Table of Contents/Navigation bar
-- Will display four "widgets" for each of the available topics (weather, news, meditation, games)
-	- On desktops the widgets will appear side by side
-	- On tablets the widgets will appear two horizontally and two vertically
-	- On mobile the widgets will appear one horizontally and four vertically
+- 
 Footer
-- Will appear at the base and remain static across all pages
-- Will contain the following info:
-- ©CourtneyMarshall2021
+-
 
 
 ## Home Page
@@ -85,12 +62,7 @@ Footer
 The home page is the first page a user will land on. 
 
 This page will provide the following key features:
--	Header should be different background/colour to the body of the page
--	Main body of the site will contain widgets of the various content available on the site
-	-	Weather widget, based on locality
-	-	News widget, Based on local top provider (news/tech)
-	-	Meditation widget, will show one of the videos available
-	-	Games, links to the available mini games
+-	
 
 Below is the initial wire frame across desktop/tablet/mobile:
 
@@ -109,50 +81,6 @@ Below is the initial wire frame across desktop/tablet/mobile:
 
 ![weatherwireframe]()
 
-## News Page
-
-This page will have a variety of news articles for the User to read 
-
-Key features:
--	A selection of Mini widgets from 4/5 different sources
--	Each one shows the top "7" articles from each site
--	
-- 	
-- 	
-
-Below is the initial wire frame across desktop/tablet/mobile:
-
-![newswireframe]()
-
-
-## Mindfullness Page
-
-This page will contain various videos on mindfullness and meditation
-
-Key features:
--	These videos will have the option of playing directly in the site or redirect to the content origin
--	Will contain some meditation videos and som specifically on mindfullness
--	
--	
-
-Below is the initial wire frame across desktop/tablet/mobile:
-
-![minfullnesswireframe]()
-
-
-## Games Page
-
-This page will enable the User to play a couple of mini games
-
-Key features:
--	Mini games should include
-		- Suduko
-		- Slots
--	Game imagery will have a tech theme
-
-Below is the initial wire frame across desktop/tablet/mobile:
-
-![gameswireframe]()
 
 
 # Final/Existing Feature Outcomes
@@ -161,32 +89,6 @@ The final site will appears as follows:
 ![multidevicesiteview]()
 
 
-- __Header Panel__
-
-  - Featured on all five pages.
-  
-
-
-![header]()
-
-
-- __Navigation Bar__
-
-  - Featured on all five pages, the full responsive navigation bar includes links to the Home, Weather, News, Mindfullness, Games pages. It will appear identical on each page. The active page for the User will have an <insert indicator here> to indicate the Users current location within the site.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-
-
-
-![navbar]()
-
-- __Footer__
-
-  - Featured on all five pages.
-
-
-
-
-![footer]()
 
 - __Weather Page__
 
@@ -197,40 +99,10 @@ The final site will appears as follows:
 
 ![weatherpage]()
 
-- __News Page__
-
-  - 
-  - 
-  - 
-  - 
-
-![newspage]()
-
-- __Mindfullness Page__
-
-  - 
-  - 
-  - 
-  - 
-  - 
-
-![mindfullnesspage]()
-
-
-- __Games Page__
-
-  - 
-  - 
-  - 
-  - 
-  - 
-
-![gamespage]()
-
 
 
 # Features to be Implemented
-- Further mini games will be included on the games page as they are developed
+- 
 
 
 # Testing 
