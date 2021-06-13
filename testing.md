@@ -5,16 +5,33 @@ The following sections are the results of the testing throughout the SDLC for MS
 ## Unit Testing:
 The following evidence captures were collected when testing was conducted throughout development of this project.
 
-Date of Testing:
-What Functionality was available:
-Test Results:
+### Round One - Testing on MVP
+13/06/2021 @ 18:08
+        Typos in the JS when processed via the JShint validator
+                compatability issue which required "/*jshint esversion: 6 */" to be added to the start of the JS file
+        No errors located in the CSS Jigsaw,
+        One warning message in the HTML validator. It isdicates the Section element should contain a h element of some type.
 
 ## Functionality Testing:
 The following evidence captures were collected when testing was conducted via the GUI throughout development.
 
-Date of Testing:
-What Functionality was available:
-Test Results:
+### Round One - Testing on MVP
+13/06/2021 @ 18:08
+        Functionality available:
+                Basic HTML and CSS settings, Javascript enabled for initial geo location of weather, along with basic search (using either enter or left click to submit)
+        Test Results:
+                Initial location (using long/lat from browser) is operational if user allows
+                Ability to search for a city (user enter to sumbit) partially successful.
+                Ability to search for a city (user left mouse click to sumbit) partially successful.
+                Currently any City name entered will default to the American location. 
+                        Need to implement a way to locate nearest match to user browser location? Or based on history?
+
+        Functionality to be developed
+                - field validation re city entry 
+                        - based on allowed entries from openweathermap? 
+                        - error message surrounding initial geo location (maybe plant in the html.)
+                - background picture updating based on api response
+                - creation of humourous sayings/texts to be updating based on api weather results (temp or description)
 
 ## Compatability testing:
 

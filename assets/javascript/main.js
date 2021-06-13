@@ -1,20 +1,23 @@
+/*jshint esversion: 6 */
+
 const api = {
     key: "fbad2bd47442fccc555456cdea9de1b0",
     base: "https://api.openweathermap.org/data/2.5/"
-  }
+  };
   
   //using browser geolocation on page load
   window.addEventListener("load", () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
         console.log(position);
-        lon = position.coords.longitude;
-        lat = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        let latitude = position.coords.latitude;
   
         // API URL
         let apiUrl =
-  `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
-  `lon=${lon}&units=metric&appid=fbad2bd47442fccc555456cdea9de1b0`;
+  `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&` +
+  `lon=${longitude}&units=metric&appid=fbad2bd47442fccc555456cdea9de1b0`;
+
   
         // Calling the API
         fetch(apiUrl)
@@ -45,7 +48,7 @@ const api = {
   });
   
 
-  //Search functionality to accept enter as confirm
+  //Search functionality to accept enter to submit location
   const searchbox = document.querySelector('.search-box');
   searchbox.addEventListener('keypress', setQuery);
   
@@ -55,12 +58,12 @@ const api = {
     }
   }
 
-//Search functionality to accept enter as confirm
+//Search functionality to accept mouse click on button to submit location
 const searchbutton = document.querySelector('.search-button');
     searchbutton.addEventListener('click', setMouseQuery);
     
 function setMouseQuery(evt) {
-    if (evt.click) {
+  if (evt.which == 1) {
         getResults(searchbox.value);
     }
 }

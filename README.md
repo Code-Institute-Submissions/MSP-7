@@ -174,6 +174,10 @@ This project could not have been created without the following:
 ## Code 
 - Tyler Potts https://www.youtube.com/watch?v=n4dtwWgRueI
 
+## API
+- Open Weather Map site and APIs
+      https://home.openweathermap.org/
+
 
 ## Media
 
