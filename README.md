@@ -1,15 +1,24 @@
-# Personal Website
-The purpose of Milestone Project 2 is to create a 
+# Wether Application
+
+The purpose of Milestone Project 2 is to create a simple weather application
+
 # Project Summary
 
 The Project will enable a user to:
+- See the weather for their current location by default on opening
+- Manually enter a city to search for weather results
 
 
 
 ## Benefits and Rational
 
-Such a website will:
--	Give the user something to do when they only have a few minutes to spare. ie while waiting for/travelling on the bus, or in line at a shop, or even while dinner is cooking.
+Such an application will:
+-	Enable the user to view Local weather
+- Enable the User to search for a city and;
+    - view the local weather
+    - view the local time
+- Have a new background on the basis of the weather results
+- Have quirky text appear on the screen depending on the weather
 
 
 ## User Stories
@@ -20,9 +29,9 @@ Business Case User stories:
 
 -	As a User I want to easily determine where content has been obtained from (if from, or maintained on, external sources)
 -	As a Visually impaired user I want to know that all non-text elements have planned alt text equivalents
--	As a User I want to easily identify which page of the site I am on at any given time
 -	As a User I want to be able to quickly view the weather for my local area
 - As a User I want to be able to change the location of the weather information being provided 
+- As a User I want to be notified if an incorrect city has been entered
 
 Functional Developer stories:
 -	As a Developer I want all external links to open in a new browser tab
@@ -32,7 +41,6 @@ Functional Developer stories:
 -	As a Developer I want to ensure that the website is responsive accross multiple devices
 -	As a Developer I want to ensure the website is quick to load and responsive to User interaction.
 -	As a Developer I want to ensure that images are displayed without pixelization irrespective of screen size
--	As a Developer I want to ensure
 -	As a Developer I want to ensure there are screen captures of the finished project within the README document
 -	As a Developer I want to ensure the website meets accessibility guidelines
 -	As a Developer I want to ensure the website follows the principles of UX design and presents a structured layout and navigation model
@@ -47,39 +55,13 @@ Functional Developer stories:
 ## Design Consistancies
 The following are a list of design aspects that must be maintained throughout the site. 
 
-Header will consist of:
-- 
-Table of Contents / Navigation bar.
-- 
-Body of page
-- 
-Footer
--
-
-
-## Home Page
-
-The home page is the first page a user will land on. 
-
-This page will provide the following key features:
--	
-
-Below is the initial wire frame across desktop/tablet/mobile:
-
-![homepagewireframe]()
-
-## Weather Page
-
-This page will display a detailed view of the weather for a selected area.
-
-Key features:
--	Default weather location will be Dublin
--	Selection of locations available (insert options here)
--	
-
-Below is the initial wire frame across desktop/tablet/mobile:
-
-![weatherwireframe]()
+The application must be clear and concise. It should display, at a minimun:
+- The location
+- The local time
+- The days weather (text format)
+- The high/low temperature for the day
+- A background that reflects the weather results without detracting from the text
+- Ability to search for a particular city, easily
 
 
 
