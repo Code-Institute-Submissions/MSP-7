@@ -83,7 +83,7 @@ The final site will appears as follows:
 
 
 
-# Features to be Implemented
+# Future Features to be Implemented
 - 
 
 
@@ -98,7 +98,7 @@ This will reduce the effect of reading what should be there instead of what is a
 
 ## Functionality/User Testing
  
-A once a stable working prototype each page is available the code will be validated via the W3C html validator, the CSS jigsaw and the JavaScript Jshint.
+A once a stable working prototype each page is available the code will be validated via the W3C html validator, the CSS jigsaw and the JavaScript JShint.
 
 At regular intervals this validation will occur.
 
@@ -108,7 +108,7 @@ User acceptance testing will be conducted on an ongoing basis. Prior to each git
 
 Time will be spent testing the website in desktop browsers (Chrome, firefox, edge), tablet sizes, mobile size.
 
-Once a working prototype is available, a third-party individual will review the website as an independent user with no prior knowledge of its purpose (or project criteria). This session will consist of a structured test suite based on the described User Stories and a time-box exploratory test session.
+Once a working prototype is available, a third-party individual(s) will review the website as an independent user with no prior knowledge of its purpose (or project criteria). This session will consist of a structured test suite based on the described User Stories and a time-box exploratory test session.
 Feedback from this session will be used to further develop and/or amend the site.
 
 ## Production Shakedown
@@ -125,9 +125,7 @@ Once the site has been deployed the JavaScript code will be passed throught the 
 
 ![jshintvalidator]()
 
-All links will be manually accessed to ensure that the correct page opens in a new tab.
-
-All pages will be visually inspected to ensure all logos have loaded
+All elements will be visually inspected to ensure all information has been correctly populated and loaded
 
 Once the site has been deployed the sites loading/performance will be tested to ensure there are no undue delays for the User
 
@@ -174,7 +172,7 @@ To copy the code to your own repository, complete the following steps:
 This project could not have been created without the following:
 
 ## Code 
-
+- Tyler Potts https://www.youtube.com/watch?v=n4dtwWgRueI
 
 
 ## Media
