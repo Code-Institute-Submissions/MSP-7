@@ -13,7 +13,7 @@ const api = {
   
         // API URL
         let apiUrl =
-  `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
+  `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
   `lon=${lon}&units=metric&appid=fbad2bd47442fccc555456cdea9de1b0`;
   
         // Calling the API
