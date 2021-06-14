@@ -19,7 +19,7 @@ const api = {
   `lon=${longitude}&units=metric&appid=fbad2bd47442fccc555456cdea9de1b0`;
 
   
-        // Calling the API
+        // Calling the API and updating home page
         fetch(apiUrl)
           .then((response) => {
             return response.json();
@@ -41,22 +41,21 @@ const api = {
   
             let hilow = document.querySelector('.hi-low');
             hilow.innerText = `${Math.round(geoweather.main.temp_min)}°c / ${Math.round(geoweather.main.temp_max)}°c`;
-  
           });
       });
     }
   });
   
 
-  //Search functionality to accept enter to submit location
-  const searchbox = document.querySelector('.search-box');
+//Search functionality to accept enter to submit location
+const searchbox = document.querySelector('.search-box');
   searchbox.addEventListener('keypress', setQuery);
   
-  function setQuery(evt) {
-    if (evt.keyCode == 13) {
-        getResults(searchbox.value);
-    }
+function setQuery(evt) {
+  if (evt.keyCode == 13) {
+      getResults(searchbox.value);
   }
+}
 
 //Search functionality to accept mouse click on button to submit location
 const searchbutton = document.querySelector('.search-button');
@@ -75,9 +74,13 @@ function setMouseQuery(evt) {
        return weather.json();
      }).then(displayResults);
   }
+  var weatherone = weather.weather[0].description;
+    console.log(weatherone)
+
   // Updates the page with the chosen city details
   function displayResults (weather) {
      console.log(weather);
+
    let city = document.querySelector('.location .city');
    city.innerText = `${weather.name}, ${weather.sys.country}`;
   
@@ -90,7 +93,7 @@ function setMouseQuery(evt) {
   
    let weather_el = document.querySelector('.current .weather');
    weather_el.innerText = weather.weather[0].description;
-  
+   
    let hilow = document.querySelector('.hi-low');
    hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
   }
