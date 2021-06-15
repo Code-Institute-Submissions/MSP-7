@@ -92,7 +92,6 @@ function displayResults (weather) {
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = weather.weather[0].description;
 
- 
   let hilow = document.querySelector('.hi-low');
   hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 
@@ -100,17 +99,33 @@ function displayResults (weather) {
   let weatherIcon = weather_el.textContent;
   console.log(weatherIcon);  
   
-  if (weatherIcon = "clear sky") {
-    document.body.style.backgroundColor = "blue";
-  } else if (weatherIcon = "broken clouds") {
-    document.body.style.backgroundColor = "pink";
-  } else if (weatherIcon = "scattered clouds") {
-    document.body.style.backgroundColor = "green";
-  } else if (weatherIcon = "snow") {
-    document.body.style.backgroundColor = "purple";
-  } else if(weatherIcon = "few clouds") {
-    document.body.style.backgroundColor = "yellow";
-  }
+  switch(weatherIcon) {
+    case 'clear sky':
+      document.body.style.backgroundColor = "blue";
+        break;
+    case 'broken clouds':
+      document.body.style.backgroundColor = "pink";
+        break;
+    case 'scattered clouds':
+      document.body.style.backgroundColor = "pink";
+        break;
+    default:
+      document.body.style.backgroundColor = "green";
+        break;
+}
+
+  // if (weatherIcon = "clear sky") {
+  //   document.body.style.backgroundColor = "blue";
+  // } else if (weatherIcon = "broken clouds") {
+  //   document.body.style.backgroundColor = "pink";
+  // } else if (weatherIcon = "scattered clouds") {
+  //   document.body.style.backgroundColor = "green";
+  // } else if (weatherIcon = "snow") {
+  //   document.body.style.backgroundColor = "purple";
+  // } else if(weatherIcon = "few clouds") {
+  //   document.body.style.backgroundColor = "yellow";
+  // }
+
 };
 
 function dateBuilder (d) {
