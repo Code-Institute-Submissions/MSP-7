@@ -8,7 +8,8 @@
   
 body {
     font-family: 'Viaodo Libre', 'Vesper Libre', sans-serif;
-    background-image: url('/assets/images/backgrounds/dust.jfif');
+    /* background-image: url('/assets/images/backgrounds/drizzle.jfif'); */
+    background-color: aqua;
     background-size: cover;
     background-position: top center;
 }
