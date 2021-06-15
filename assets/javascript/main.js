@@ -100,17 +100,45 @@ function displayResults (weather) {
   console.log(weatherIcon);  
   
   switch(weatherIcon) {
-    case 'clear sky':
+    // Thunderstorm terminology
+    case 'thunderstorm with light rain', 'thunderstorm with rain', 'thunderstorm with heavy rain',	'light thunderstorm', 'thunderstorm', 'heavy thunderstorm', 'ragged thunderstorm', 'thunderstorm with light drizzle', 'thunderstorm with drizzle', 'thunderstorm with heavy drizzle':
       document.body.style.backgroundColor = "blue";
         break;
-    case 'broken clouds':
+    // Drizzle terminology
+    case 'light intensity drizzle', 'drizzle', 'heavy intensity drizzle', 'light intensity drizzle rain', 'drizzle rain', 'heavy intensity drizzle rain', 'shower rain and drizzle', 'heavy shower rain and drizzle', 'shower drizzle':
       document.body.style.backgroundColor = "pink";
         break;
-    case 'scattered clouds':
-      document.body.style.backgroundColor = "pink";
+    // Rain terminology
+    case 'light rain', 'moderate rain', 'heavy intensity rain', 'very heavy rain', 'extreme rain', 'freezing rain', 'light intensity shower rain', 'shower rain', 'heavy intensity shower rain', 'ragged shower rain':
+      document.body.style.backgroundColor = "red";
         break;
+    // Snow terminology
+    case 'light snow', 'Snow', 'Heavy snow', 'Sleet', 'Light shower sleet', 'Shower sleet', 'Light rain and snow', 'Rain and snow', 'Light shower snow', 'Shower snow', 'Heavy shower snow':
+      document.body.style.backgroundColor = "grey";
+        break;
+    // Cloud terminology
+    case 'few clouds', 'scattered clouds', 'broken clouds', 'overcast clouds':
+      document.body.style.backgroundColor = "orange";
+        break;
+    //Haze terminology
+    case 'Haze':
+      document.body.style.backgroundColor = "maroon";
+        break;
+    // Fog terminology
+    case 'fog':
+      document.body.style.backgroundColor = "lime";
+        break;
+    // Sand/dust terminology
+    case 'sand', 'dust':
+      document.body.style.backgroundColor = "olive";
+        break;
+    // Tornado terminology
+    case 'tornado':
+      document.body.style.backgroundColor = "navy";
+        break;
+    // a default for any unknown terms not specified in the API documentation
     default:
-      document.body.style.backgroundColor = "green";
+      document.body.style.backgroundColor = "black";
         break;
 }
 
