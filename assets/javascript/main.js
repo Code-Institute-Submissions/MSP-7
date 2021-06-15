@@ -74,8 +74,6 @@ function setMouseQuery(evt) {
        return weather.json();
      }).then(displayResults);
   }
-  var weatherone = weather.weather[0].description;
-    console.log(weatherone)
 
   // Updates the page with the chosen city details
   function displayResults (weather) {
