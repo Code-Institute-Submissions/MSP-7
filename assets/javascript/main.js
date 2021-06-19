@@ -92,9 +92,6 @@ function displayResults (apiData) {
   weatherBackground = weather_el.textContent;
   console.log(weatherBackground);
 
-  // let icon = apiData.weather[0].icon;
-  // console.log(icon);
-
   let hilow = document.querySelector('.hi-low');
   hilow.innerText = `${Math.round(apiData.main.temp_min)}°c / ${Math.round(apiData.main.temp_max)}°c`;
 
@@ -104,7 +101,7 @@ function displayResults (apiData) {
     // Thunderstorm background
     case 'Thunderstorm':
       document.body.style.backgroundColor = "dark grey";
-      document.body.style.backgroundImage = 
+      //document.body.style.backgroundImage = 
         break;
     // Drizzle background
     case 'Drizzle':

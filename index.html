@@ -12,8 +12,11 @@
 <!-- The following code updates to match either 
      - the Users city by geolocation (if accepted by the user); or
      - Users chosen Search submission -->
-<div class="app-wrap">
+<div class="weather-details">
     <div class="main-details">
+        <section>
+            <div class="header">What's the Weather</div>
+        </section>
         <section class="location">
             <div class="city"> </div>
             <div class="date"> </div>
@@ -22,12 +25,12 @@
             <div class="temp"> <span> </span></div>
             <div class="weather"> Without geolocation permission please search for your location below </div>
             <div class="hi-low"> </div>
-            </section>
+        </section>
     </div>
 <!-- The below code refers to the search bar function to enable the user to search for a particular location -->
     <div class="searchbar">
-        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
-        <button class="search-button" type="submit"><i class="fas fa-sign-in-alt"></i></button>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+            <button class="search-button" type="submit"><i class="fas fa-sign-in-alt"></i></button>
     </div>
 </div>
 <script src="https://kit.fontawesome.com/d5772fb3d7.js" crossorigin="anonymous"></script>
