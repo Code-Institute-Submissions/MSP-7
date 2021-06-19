@@ -71,7 +71,7 @@ function getResults (query) {
    .then(apiData => {
      return apiData.json();
    }).then(displayResults);
-};
+}
 
 // The following instructions breakdown the API response and populate the information onto the GUI
 function displayResults (apiData) {
@@ -89,7 +89,7 @@ function displayResults (apiData) {
 
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = apiData.weather[0].main;
-  weatherBackground = weather_el.textContent;
+  let weatherBackground = weather_el.textContent;
   console.log(weatherBackground);
 
   let hilow = document.querySelector('.hi-low');
@@ -139,8 +139,7 @@ function displayResults (apiData) {
     default:
       document.body.style.backgroundColor = "black";
         break;
-};
-};
+}};
 
 function dateBuilder (d) {
  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
