@@ -97,49 +97,59 @@ function displayResults (apiData) {
 
   // The following instructions changes the background   depending on the weather report
 
-  switch(weatherBackground) {
-    // Thunderstorm background
-    case 'Thunderstorm':
+    // Thunderstorm background  
+    if (weatherBackground == "Thunderstorm") {
       document.body.style.backgroundColor = "dark grey";
-      //document.body.style.backgroundImage = 
-        break;
-    // Drizzle background
-    case 'Drizzle':
-      document.body.style.backgroundColor = "light grey";
-        break;
-    // Rain background
-    case 'Rain':
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/thunderstorm.PNG")`;
+      console.log(weatherBackground);
+    }
+      // Rain background	  
+    else if (weatherBackground == "Rain") {
       document.body.style.backgroundColor = "grey";
-        break;
-    // Snow background
-    case 'Snow':
-      document.body.style.backgroundColor = "white";
-        break;
-    // Sunny background
-    case 'Clear':
-      document.body.style.backgroundColor = "yellow";
-        break;
-    // Cloud background
-    case 'Cloud':
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
+      console.log(weatherBackground);  
+    }
+    else if (weatherBackground == "Drizzle") {
+      document.body.style.backgroundColor = "grey";
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
+      console.log(weatherBackground);  
+    }
+      // Snow background	  
+    else if (weatherBackground == "Snow") {
+      //document.body.style.backgroundColor = "white";
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
+      console.log(weatherBackground);
+    }
+      // Sunny background
+    else if (weatherBackground == "Clear") {
+      //document.body.style.backgroundColor = "yellow";
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/sun.PNG")`;
+      console.log(weatherBackground);
+    }
+      // Cloud background
+    else if (weatherBackground == "Clouds") {
       document.body.style.backgroundColor = "orange";
-        break;
-    //Haze background
-    case 'Haze':
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/cloud.PNG")`;
+      console.log(weatherBackground);  
+    }  
+    // Haze/ Fog background
+    else if (weatherBackground == "Haze") {
       document.body.style.backgroundColor = "maroon";
-        break;
-    // Fog background
-    case 'Fog':
-      document.body.style.backgroundColor = "lime";
-        break;
-    // Tornado background
-    case 'tornado':
-      document.body.style.backgroundColor = "navy";
-        break;
-    // a default for any unknown terms not specified in the current API documentation
-    default:
-      document.body.style.backgroundColor = "black";
-        break;
-}};
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/mist-fog.PNG")`;
+      console.log(weatherBackground);
+    }
+    else if (weatherBackground == "Fog") {
+      document.body.style.backgroundColor = "maroon";
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/mist-fog.PNG")`;
+      console.log(weatherBackground);
+    }
+      // a default for any unknown terms not specified in the current API documentation
+      else {
+        document.body.style.backgroundColor = "black";
+        console.log(weatherBackground);
+    }
+
+};
 
 function dateBuilder (d) {
  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
