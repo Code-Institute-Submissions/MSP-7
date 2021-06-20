@@ -15,10 +15,9 @@ The Project will enable a user to:
 Such an application will:
 -	Enable the user to view Local weather
 - Enable the User to search for a city and;
-    - view the local weather
-    - view the local time
+    - view the chosen citys local weather
+    - view the chosen citys local time
 - Have a new background on the basis of the weather results
-- Have quirky text appear on the screen depending on the weather
 
 
 ## User Stories
@@ -48,8 +47,6 @@ Functional Developer stories:
 -	As a Developer I want to be able to easily deploy this site to the cloud
 *Interpreted from the Assignment document*
 
-
-
 # Functional Requirements Scope
 
 ## Design Consistancies
@@ -63,7 +60,7 @@ The application must be clear and concise. It should display, at a minimun:
 - A background that reflects the weather results without detracting from the text
 - Ability to search for a particular city, easily
 
-
+![initialwireframe](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/weather_wireframe.png)
 
 # Final/Existing Feature Outcomes
 The final site will appears as follows:
@@ -84,7 +81,7 @@ The final site will appears as follows:
 
 
 # Future Features to be Implemented
-- 
+- Currently there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A concent message will be needed inorder to obtain the initial geo location details to enable autoload of the users local weather. 
 
 
 # Testing 
@@ -125,14 +122,21 @@ Once the site has been deployed the JavaScript code will be passed throught the 
 
 ![jshintvalidator]()
 
-All elements will be visually inspected to ensure all information has been correctly populated and loaded
+All elements will be visually inspected to ensure all information has been correctly populated and loaded.
+
+All visual elements have been validated by the WAI approved Luminosity Colour Contrast Ratio Analysis checker. These results are located within the testing document.
+(https://juicystudio.com/services/luminositycontrastratio.php#specify)
 
 Once the site has been deployed the sites loading/performance will be tested to ensure there are no undue delays for the User
 
 
 ### Unfixed bugs
 
-- details of any unfixed bugs here
+- currently no check error if the API is not working
+- Currently no validation on the search bar for entry
+- currently cities entered automatically default to their American version
+- Currently media query settings in the CSS document do not seem to apply to the JS implamented image.
+- Website requires a favicon
 
 
 
@@ -181,6 +185,17 @@ This project could not have been created without the following:
 
 ## Media
 
+The anow/sun/rain backgrounds.
+    - https://cdn.hipwallpaper.com/i/62/98/HolfGB.jpg
+
+thunderstorm
+    - https://www.freepik.com/free-vector/background-with-rain-dark-sky_2095873.htm
+
+mist
+    - https://www.freepik.com/free-vector/evening-fog-tops-trees-pine-forest_6804326.htm#page=1&query=fog%20trees&position=5
+
+cloud
+    - https://unsplash.com/photos/fC_RaKIC9ao
 
 
 
@@ -191,6 +206,3 @@ Independant Reviewers: Tom Walsh, Daragh Curtis,
 Code Institute (https://codeinstitute.net/)
 
 Mentor: Felipe Souza Alarco
- 
-
-
