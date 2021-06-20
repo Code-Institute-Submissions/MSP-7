@@ -89,7 +89,7 @@ function displayResults (apiData) {
 
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = apiData.weather[0].main;
-  let weatherBackground = "Thunderstorm";
+  let weatherBackground = weather_el.textContent;
   console.log(weatherBackground);
 
   let hilow = document.querySelector('.hi-low');
@@ -114,7 +114,7 @@ function displayResults (apiData) {
       // Snow background	  
     else if (weatherBackground == "Snow") {
       document.body.style.backgroundColor = 'rgb(' + [89,207,250].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/snow.PNG")`;
     }
       // Sunny background
     else if (weatherBackground == "Clear") {
