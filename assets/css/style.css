@@ -9,8 +9,9 @@
 body {
     font-family: 'Viaodo Libre', 'Vesper Libre', sans-serif;
     background-color: aqua;
-    background-size: cover;
+    background-size: 40% 100%;
     background-position: top center;
+    background-repeat: no-repeat;
 }
   
 .weather-details {
@@ -89,7 +90,7 @@ body {
   }
 
 .searchbar input {
-      width: 50vw;
+      width: 30vw;
       padding: 10px 15px;
       border: none;
       outline: none;
