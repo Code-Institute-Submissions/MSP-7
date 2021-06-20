@@ -21,8 +21,8 @@ The following evidence captures were collected when testing was conducted via th
                 Basic HTML and CSS settings, Javascript enabled for initial geo location of weather, along with basic search (using either enter or left click to submit)
         Test Results:
                 Initial location (using long/lat from browser) is operational if user allows
-                Ability to search for a city (user enter to sumbit) partially successful.
-                Ability to search for a city (user left mouse click to sumbit) partially successful.
+                Ability to search for a city (user enter to submit) partially successful.
+                Ability to search for a city (user left mouse click to submit) partially successful.
                 Currently any City name entered will default to the American location. 
                         Need to implement a way to locate nearest match to user browser location? Or based on history?
 
@@ -32,6 +32,43 @@ The following evidence captures were collected when testing was conducted via th
                         - error message surrounding initial geo location (maybe plant in the html.)
                 - background picture updating based on api response
                 - creation of humourous sayings/texts to be updating based on api weather results (temp or description)
+
+<p float="left">
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/js%2013621%20result.PNG" width="300" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/html%2013621%20result.PNG" width="300" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/css%2013621%20result.PNG" width="300" height="400" />
+</p>
+
+
+### Round Two - Testing on MVP
+19/06/2021
+        Functionality available:
+                Basic HTML and CSS settings, 
+                Javascript enabled for initial geo location of weather, 
+                Basic search (using either enter or left click to submit)
+                Background updates based on weather main content
+        Test Results:
+                Initial location (using long/lat from browser) is operational if user allows - message on page if geolocation request declined
+                Ability to search for a city (user enter to submit) 
+                Ability to search for a city (user left mouse click to sumbit) 
+                Invalid submittion does not currently produce an error
+                Still exists -  any City name entered will default to the American location. 
+                        - Need to implement a way to locate nearest match to user browser location? Or based on history?
+
+        Functionality to be developed
+                - field validation re city entry 
+                        - based on allowed entries from openweathermap? 
+                        - error message surrounding initial geo location (maybe plant in the html.)
+                - background picture updating based on api response
+                - creation of humourous sayings/texts to be updating based on api weather results (temp or description)
+
+<p float="left">
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="300" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="300" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="300" height="400" />
+</p>
+
+
 
 ## Compatability testing:
 
