@@ -66,12 +66,13 @@ if (evt.which == 1) {
 }
 
 // The below fetchs the information via API based on the searchbar entry
-function getResults (query) {
- fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+
+  fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
    .then(apiData => {
      return apiData.json();
-   }).then(displayResults);
-}
+  })
+  .then(displayResults);
+
 
 // The following instructions breakdown the API response and populate the information onto the GUI
 function displayResults (apiData) {

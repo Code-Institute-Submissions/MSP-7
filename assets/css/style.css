@@ -32,7 +32,7 @@ body {
 
 /* header formatting */
 .header {
-  color: #FFF;
+  color: rgb(255, 255, 255);
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 5px;
@@ -79,6 +79,13 @@ body {
     font-size: 1.5em;
     font-weight: 500;
     text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.wicon {
+  color: #FFF;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
 }
 
   /* search bar formatting */
