@@ -95,60 +95,50 @@ function displayResults (apiData) {
   let hilow = document.querySelector('.hi-low');
   hilow.innerText = `${Math.round(apiData.main.temp_min)}°c / ${Math.round(apiData.main.temp_max)}°c`;
 
-  // The following instructions changes the background   depending on the weather report
+  // The following instructions changes the background depending on the weather report response from the API
 
     // Thunderstorm background  
     if (weatherBackground == "Thunderstorm") {
-      document.body.style.backgroundColor = "dark grey";
+      document.body.style.backgroundColor = 'rgb(' + [75,68,81].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/thunderstorm.PNG")`;
-      console.log(weatherBackground);
     }
       // Rain background	  
     else if (weatherBackground == "Rain") {
-      document.body.style.backgroundColor = "grey";
+      document.body.style.backgroundColor = 'rgb(' + [79,145,162].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
-      console.log(weatherBackground);  
     }
     else if (weatherBackground == "Drizzle") {
-      document.body.style.backgroundColor = "grey";
+      document.body.style.backgroundColor = 'rgb(' + [79,145,162].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
-      console.log(weatherBackground);  
     }
       // Snow background	  
     else if (weatherBackground == "Snow") {
-      //document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = 'rgb(' + [89,207,250].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
-      console.log(weatherBackground);
     }
       // Sunny background
     else if (weatherBackground == "Clear") {
-      //document.body.style.backgroundColor = "yellow";
+      document.body.style.backgroundColor = 'rgb(' + [255,213,58].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/sun.PNG")`;
-      console.log(weatherBackground);
     }
       // Cloud background
     else if (weatherBackground == "Clouds") {
-      document.body.style.backgroundColor = "orange";
+      document.body.style.backgroundColor = 'rgb(' + [0,125,186].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/cloud.PNG")`;
-      console.log(weatherBackground);  
     }  
     // Haze/ Fog background
     else if (weatherBackground == "Haze") {
-      document.body.style.backgroundColor = "maroon";
+      document.body.style.backgroundColor = 'rgb(' + [86,139,187].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/mist-fog.PNG")`;
-      console.log(weatherBackground);
     }
     else if (weatherBackground == "Fog") {
-      document.body.style.backgroundColor = "maroon";
+      document.body.style.backgroundColor = 'rgb(' + [86,139,187].join(',') + ')';
       document.body.style.backgroundImage = `url("../assets/images/backgrounds/mist-fog.PNG")`;
-      console.log(weatherBackground);
     }
       // a default for any unknown terms not specified in the current API documentation
       else {
         document.body.style.backgroundColor = "black";
-        console.log(weatherBackground);
     }
-
 };
 
 function dateBuilder (d) {
