@@ -66,13 +66,12 @@ if (evt.which == 1) {
 }
 
 // The below fetchs the information via API based on the searchbar entry
-
+function getResults (query) {
   fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
    .then(apiData => {
      return apiData.json();
-  })
-  .then(displayResults);
-
+    }).then(displayResults);
+}
 
 // The following instructions breakdown the API response and populate the information onto the GUI
 function displayResults (apiData) {
@@ -90,7 +89,7 @@ function displayResults (apiData) {
 
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = apiData.weather[0].main;
-  let weatherBackground = weather_el.textContent;
+  let weatherBackground = "Thunderstorm";
   console.log(weatherBackground);
 
   let hilow = document.querySelector('.hi-low');
