@@ -52,7 +52,7 @@ searchbox.addEventListener('keypress', setQuery);
 function setQuery(evt) {
   if (evt.keyCode == 13) {
     getResults(searchbox.value);
-    document.querySelector('.search-box').reset(); // not working!!!!!
+    // document.querySelector('.search-box').reset(); // not working!!!!!
   }
 }
 
@@ -72,13 +72,15 @@ function getResults (query) {
   // if (${apiData}.cod = 200) {
     .then(status)
     .then(apiData => {
-     return apiData.json()
-    }).then(displayResults)
-}
+          if (apiData.cod >= 200 && apiData.cod < 400) {
+     return apiData.json();
+    }
+  });
+
 
 // The following instructions breakdown the API response and populate the information onto the GUI
-function displayResults (apiData) {
-  console.log(apiData);
+  function displayResults (apiData) {
+    console.log(apiData);
 
   let city = document.querySelector('.location .city');
   city.innerText = `${apiData.name}, ${apiData.sys.country}`;
@@ -92,7 +94,7 @@ function displayResults (apiData) {
 
   let weather_el = document.querySelector('.current .weather');
   weather_el.innerText = apiData.weather[0].main;
-  let weatherBackground = weather_el.textContent;
+  let weatherBackground = weather.textContent;
   console.log(weatherBackground);
 
   let hilow = document.querySelector('.hi-low');
@@ -102,46 +104,48 @@ function displayResults (apiData) {
 
     // Thunderstorm background  
     if (weatherBackground == "Thunderstorm") {
-      document.body.style.backgroundColor = 'rgb(' + [75,68,81].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/thunderstorm.PNG")`;
+      document.body.style.backgroundColor = 'grey';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
     }
       // Rain background	  
     else if (weatherBackground == "Rain") {
-      document.body.style.backgroundColor = 'rgb(' + [79,145,162].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
+      document.body.style.backgroundColor = 'grey';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
     }
     else if (weatherBackground == "Drizzle") {
-      document.body.style.backgroundColor = 'rgb(' + [79,145,162].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/rain.PNG")`;
+      document.body.style.backgroundColor = 'green';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/green.svg")`;
     }
       // Snow background	  
     else if (weatherBackground == "Snow") {
-      document.body.style.backgroundColor = 'rgb(' + [89,207,250].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/snow.PNG")`;
+      document.body.style.backgroundColor = 'pink';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/pink.svg")`;
     }
       // Sunny background
     else if (weatherBackground == "Clear") {
-      document.body.style.backgroundColor = 'rgb(' + [255,213,58].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/sun.PNG")`;
+      document.body.style.backgroundColor = 'yellow';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/yellow.svg")`;
     }
       // Cloud background
     else if (weatherBackground == "Clouds") {
-      document.body.style.backgroundColor = 'rgb(' + [0,125,186].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/cloud.PNG")`;
+      document.body.style.backgroundColor = 'blue';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/blue.svg")`;
     }  
     // Haze/ Fog background
     else if (weatherBackground == "Haze") {
-      document.body.style.backgroundColor = 'rgb(' + [86,139,187].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/mist-fog.PNG")`;
+      document.body.style.backgroundColor = 'purple';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/purple.svg")`;
     }
     else if (weatherBackground == "Fog") {
-      document.body.style.backgroundColor = 'rgb(' + [86,139,187].join(',') + ')';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/mist-fog.PNG")`;
+      document.body.style.backgroundColor = 'red';
+      document.body.style.backgroundImage = `url("../assets/images/backgrounds/red.svg")`;
     }
       // a default for any unknown terms not specified in the current API documentation
       else {
         document.body.style.backgroundColor = "black";
+        document.body.style.backgroundImage = `url("../assets/images/backgrounds/default.svg")`;
     }
+  }
 };
 
 function dateBuilder (d) {

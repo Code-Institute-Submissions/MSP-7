@@ -9,9 +9,8 @@
 body {
     font-family: 'Viaodo Libre', 'Vesper Libre', sans-serif;
     background-color: aqua;
-    background-size: 40% 100%;
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
   
 .weather-details {
@@ -127,9 +126,6 @@ body {
 
   /* media styles for standard enterprise tablets */
 @media screen and (max-width:800px) {
-.body {
-  background-size: 100% 100%;
-}
 .searchbar input {
   width: 50vw;
-}
+}}
