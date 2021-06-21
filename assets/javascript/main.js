@@ -52,6 +52,7 @@ searchbox.addEventListener('keypress', setQuery);
 function setQuery(evt) {
   if (evt.keyCode == 13) {
     getResults(searchbox.value);
+    document.querySelector('.search-box').reset(); // not working!!!!!
   }
 }
 
@@ -68,9 +69,11 @@ if (evt.which == 1) {
 // The below fetchs the information via API based on the searchbar entry
 function getResults (query) {
   fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-   .then(apiData => {
-     return apiData.json();
-    }).then(displayResults);
+  // if (${apiData}.cod = 200) {
+    .then(status)
+    .then(apiData => {
+     return apiData.json()
+    }).then(displayResults)
 }
 
 // The following instructions breakdown the API response and populate the information onto the GUI
