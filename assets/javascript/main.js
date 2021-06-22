@@ -52,7 +52,6 @@ searchbox.addEventListener('keypress', setQuery);
 function setQuery(evt) {
   if (evt.keyCode == 13) {
     getResults(searchbox.value);
-    // document.querySelector('.search-box').reset(); // not working!!!!!
   }
 }
 
@@ -84,6 +83,7 @@ function getResults (query) {
 // The following instructions breakdown the API response and populate the information onto the GUI
   function displayResults (apiData) {
     console.log(apiData);
+   
       if (apiData.cod == "200") {
 
           let city = document.querySelector('.location .city');

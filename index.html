@@ -28,9 +28,10 @@
             <div class="hi-low"> </div>
         </div>
     </div>
-<!-- The below code refers to the search bar function to enable the user to search for a particular location -->
+<!-- The below code refers to the search bar function to enable the user to search for a particular location
+div is used in place of form to allow the value to be captured as a variable in JS -->
     <div class="searchbar">
-            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." onfocus="this.value=''"/>
             <button class="search-button" type="submit"><i class="fas fa-sign-in-alt"></i></button>
     </div>
 </div>
