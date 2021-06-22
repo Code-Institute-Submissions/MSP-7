@@ -69,13 +69,10 @@ if (evt.which == 1) {
 // The below fetchs the information via API based on the searchbar entry
 function getResults (query) {
   fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-  // if (${apiData}.cod = 200) {
     .then(status)
     .then(apiData => {
-          if (apiData.cod >= 200 && apiData.cod < 400) {
      return apiData.json();
-    }
-  });
+    });
 
 
 // The following instructions breakdown the API response and populate the information onto the GUI
