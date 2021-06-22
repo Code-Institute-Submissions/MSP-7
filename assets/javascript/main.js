@@ -73,75 +73,85 @@ function getResults (query) {
       return apiData.json();
     }).then(displayResults);
 
-
+    // fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+    // .then(result => {
+    //   return result.json();
+    // })
+    // .catch(error => {
+    //   console.log('Error: has occurred',error);
+    // });
 
 // The following instructions breakdown the API response and populate the information onto the GUI
   function displayResults (apiData) {
     console.log(apiData);
+      if (apiData.cod == "200") {
 
-  let city = document.querySelector('.location .city');
-  city.innerText = `${apiData.name}, ${apiData.sys.country}`;
+          let city = document.querySelector('.location .city');
+          city.innerText = `${apiData.name}, ${apiData.sys.country}`;
 
-  let now = new Date();
-  let date = document.querySelector('.location .date');
-  date.innerText = dateBuilder(now);
+          let now = new Date();
+          let date = document.querySelector('.location .date');
+          date.innerText = dateBuilder(now);
 
-  let temp = document.querySelector('.current .temp');
-  temp.innerHTML = `${Math.round(apiData.main.temp)}<span>°c</span>`;
+          let temp = document.querySelector('.current .temp');
+          temp.innerHTML = `${Math.round(apiData.main.temp)}<span>°c</span>`;
 
-  let weather_el = document.querySelector('.current .weather');
-  weather_el.innerText = apiData.weather[0].main;
-  let weatherBackground = weather_el.textContent;
-  console.log(weatherBackground);
+          let weather_el = document.querySelector('.current .weather');
+          weather_el.innerText = apiData.weather[0].main;
+          let weatherBackground = weather_el.textContent;
+          console.log(weatherBackground);
 
-  let hilow = document.querySelector('.hi-low');
-  hilow.innerText = `${Math.round(apiData.main.temp_min)}°c / ${Math.round(apiData.main.temp_max)}°c`;
+          let hilow = document.querySelector('.hi-low');
+          hilow.innerText = `${Math.round(apiData.main.temp_min)}°c / ${Math.round(apiData.main.temp_max)}°c`;
 
-  // The following instructions changes the background depending on the weather report response from the API
+          // The following instructions changes the background depending on the weather report response from the API
 
-    // Thunderstorm background  
-    if (weatherBackground == "Thunderstorm") {
-      document.body.style.backgroundColor = 'grey';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
-    }
-      // Rain background	  
-    else if (weatherBackground == "Rain") {
-      document.body.style.backgroundColor = 'grey';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
-    }
-    else if (weatherBackground == "Drizzle") {
-      document.body.style.backgroundColor = 'green';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/green.svg")`;
-    }
-      // Snow background	  
-    else if (weatherBackground == "Snow") {
-      document.body.style.backgroundColor = 'pink';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/pink.svg")`;
-    }
-      // Sunny background
-    else if (weatherBackground == "Clear") {
-      document.body.style.backgroundColor = 'yellow';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/yellow.svg")`;
-    }
-      // Cloud background
-    else if (weatherBackground == "Clouds") {
-      document.body.style.backgroundColor = 'blue';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/blue.svg")`;
-    }  
-    // Haze/ Fog background
-    else if (weatherBackground == "Haze") {
-      document.body.style.backgroundColor = 'purple';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/purple.svg")`;
-    }
-    else if (weatherBackground == "Fog") {
-      document.body.style.backgroundColor = 'red';
-      document.body.style.backgroundImage = `url("../assets/images/backgrounds/red.svg")`;
-    }
-      // a default for any unknown terms not specified in the current API documentation
-      else {
-        document.body.style.backgroundColor = "black";
-        document.body.style.backgroundImage = `url("../assets/images/backgrounds/default.svg")`;
-    }
+            // Thunderstorm background  
+            if (weatherBackground == "Thunderstorm") {
+              document.body.style.backgroundColor = 'grey';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
+            }
+              // Rain background	  
+            else if (weatherBackground == "Rain") {
+              document.body.style.backgroundColor = 'grey';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
+            }
+            else if (weatherBackground == "Drizzle") {
+              document.body.style.backgroundColor = 'green';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/green.svg")`;
+            }
+              // Snow background	  
+            else if (weatherBackground == "Snow") {
+              document.body.style.backgroundColor = 'pink';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/pink.svg")`;
+            }
+              // Sunny background
+            else if (weatherBackground == "Clear") {
+              document.body.style.backgroundColor = 'yellow';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/yellow.svg")`;
+            }
+              // Cloud background
+            else if (weatherBackground == "Clouds") {
+              document.body.style.backgroundColor = 'blue';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/blue.svg")`;
+            }  
+            // Haze/ Fog background
+            else if (weatherBackground == "Haze") {
+              document.body.style.backgroundColor = 'purple';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/purple.svg")`;
+            }
+            else if (weatherBackground == "Fog") {
+              document.body.style.backgroundColor = 'red';
+              document.body.style.backgroundImage = `url("../assets/images/backgrounds/red.svg")`;
+            }
+              // a default for any unknown terms not specified in the current API documentation
+              else {
+                document.body.style.backgroundColor = "black";
+                document.body.style.backgroundImage = `url("../assets/images/backgrounds/default.svg")`;
+            }
+  } else {
+    alert("Have you entered a valid location? ie City, Country Code");
+  }
   }
 };
 
