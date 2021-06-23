@@ -83,13 +83,13 @@ window.addEventListener("load", () => {
 					else if (weatherBackground == "Haze") {
 						document.body.style.backgroundColor = 'purple';
 						document.body.style.backgroundImage = `url("../assets/images/backgrounds/purple.svg")`;
-						document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities."
+						document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities.";
 					}
 					// Fog background and quote
 					else if (weatherBackground == "Fog") {
 						document.body.style.backgroundColor = 'red';
 						document.body.style.backgroundImage = `url("../assets/images/backgrounds/red.svg")`;
-						document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities."
+						document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities.";
 					}
 					// a default for any unknown terms not specified in the current API documentation
 					else {
@@ -196,13 +196,13 @@ function getResults(query) {
 			else if (weatherBackground == "Haze") {
 				document.body.style.backgroundColor = 'purple';
 				document.body.style.backgroundImage = `url("../assets/images/backgrounds/purple.svg")`;
-				document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities."
+				document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities.";
 			}
 			// Fog background and quote
 			else if (weatherBackground == "Fog") {
 				document.body.style.backgroundColor = 'red';
 				document.body.style.backgroundImage = `url("../assets/images/backgrounds/red.svg")`;
-				document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities."
+				document.getElementById("joke-text").innerHTML = "If your mind is clouded or in a fog you may have mist some opportunities.";
 			}
 			// a default for any unknown terms not specified in the current API documentation
 			else {
