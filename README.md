@@ -16,8 +16,9 @@ Such an application will:
 -	Enable the user to view Local weather
 - Enable the User to search for a city and;
     - view the chosen citys local weather
-    - view the chosen citys local time
+    - view the chosen citys local date
 - Have a new background on the basis of the weather results
+- Display a quirky comment or joke that changes inline with the weather results
 
 
 ## User Stories
@@ -30,7 +31,8 @@ Business Case User stories:
 -	As a Visually impaired user I want to know that all non-text elements have planned alt text equivalents
 -	As a User I want to be able to quickly view the weather for my local area
 - As a User I want to be able to change the location of the weather information being provided 
-- As a User I want to be notified if an incorrect city has been entered
+- As a User I want to be notified if an incorrect location has been entered
+- As a User I want to be able to use this application on both my desktop/computer and mobile device
 
 Functional Developer stories:
 -	As a Developer I want all external links to open in a new browser tab
@@ -70,45 +72,32 @@ The final site will appears as follows:
 
 
 - __Weather Page__
-
-  - 
-  - 
-  - 
-
-
-![weatherpage]()
+![weatherpagethunderstom]()
+![weatherpagerain]()
+![weatherpagedrizzle]()
+![weatherpagesnow]()
+![weatherpageclear]()
+![weatherpageclouds]()
+![weatherpagehaze]()
+![weatherpagefog]()
+![weatherpagedefault]()
 
 
 
 # Future Features to be Implemented
-- Currently there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A concent message will be needed inorder to obtain the initial geo location details to enable autoload of the users local weather. 
+- Currently there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A purposeful concent message will be needed. This message will need to specify the reqwuested data, what it will be utilised for, and if it will be stored any where.
+- Currently, after searching for a city, the search bar will only clear after the user re-clicks on the field. 
+    - Future improvement will be to clear this field once the requested data has populated into the relevant html fields.
+- Currently the only error message on the site is generated on the back of the API response. 
+    - Future improvement is to develop field validation on the search bar
+    - Future improvement is to increase the range of errormessages available 
 
 
 # Testing 
 
-The subsections detail the proposed approach for testing of the final product. Due to the size and nature of this project, full details and evidence of testing will be maintained in a seperate document.
+Full details and evidence of testing conducted throughout the SDLC of this project will be maintained in a seperate document called testing.md
 
-## Unit Testing
- 
-A formal round of unit testing will not be conducted for this project. Instead, there will be a form of self-peer review whereby code writing will occur on day one and code review and refactoring will occur on the following day.
-This will reduce the effect of reading what should be there instead of what is actually there.
-
-## Functionality/User Testing
- 
-A once a stable working prototype each page is available the code will be validated via the W3C html validator, the CSS jigsaw and the JavaScript JShint.
-
-At regular intervals this validation will occur.
-
-## User Acceptance Testing
- 
-User acceptance testing will be conducted on an ongoing basis. Prior to each git push, an exploratory testing session will occur via the GUI interface.
-
-Time will be spent testing the website in desktop browsers (Chrome, firefox, edge), tablet sizes, mobile size.
-
-Once a working prototype is available, a third-party individual(s) will review the website as an independent user with no prior knowledge of its purpose (or project criteria). This session will consist of a structured test suite based on the described User Stories and a time-box exploratory test session.
-Feedback from this session will be used to further develop and/or amend the site.
-
-## Production Shakedown
+## Production Shakedown Pre Submission
 
 Once the site has been deployed the HTML code will be passed throught the official W3C validator for the HTML portions:
 
@@ -125,14 +114,14 @@ Once the site has been deployed the JavaScript code will be passed throught the 
 All elements will be visually inspected to ensure all information has been correctly populated and loaded.
 
 All visual elements have been validated by the WAI approved Luminosity Colour Contrast Ratio Analysis checker. These results are located within the testing document.
-(https://juicystudio.com/services/luminositycontrastratio.php#specify)
 
-Once the site has been deployed the sites loading/performance will be tested to ensure there are no undue delays for the User
+Once the site has been deployed the site loading/performance will be tested to ensure there are no undue delays for the User
 
 
 ### Unfixed bugs
 
 - currently cities entered automatically default to their American version
+        Workaround in place requesting the User enter City and Country code. There will be a future improvement developed to improve this process.
 - Website requires a favicon
 
 
