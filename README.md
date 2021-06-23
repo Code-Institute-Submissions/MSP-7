@@ -198,6 +198,9 @@ To validate the colour contrast (WAI approved)
 Javascripts checker.
 - https://jshint.com/
 
+Javascript formatter
+- https://codebeautify.org/jsviewer
+
 HTML validator
 - https://validator.w3.org/
 
@@ -210,7 +213,7 @@ Favicon generator
 Speed testing
 - https://gtmetrix.com
 
-Shrink picture without reducing quality
+Reduce picture size without effecting quality
 - https://tinypng.com
 
 
