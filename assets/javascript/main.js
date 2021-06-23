@@ -35,58 +35,68 @@ window.addEventListener("load", () => {
                   temp.innerHTML = `${Math.round(geoweather.main.temp)}<span>°c</span>`;
 
                   let weather_el = document.querySelector('.current .weather');
-                  weather_el.innerText = geoweather.weather[0].description;
+                  weather_el.innerText = geoweather.weather[0].main;
                   let weatherBackground = weather_el.textContent;
                   console.log(weatherBackground);
 
                   let hilow = document.querySelector('.hi-low');
                   hilow.innerText = `${Math.round(geoweather.main.temp_min)}°c / ${Math.round(geoweather.main.temp_max)}°c`;
- // The following instructions changes the background depending on the weather report response from the API
+ // The following instructions changes the background/joke depending on the weather report response from the API
 
-          // Thunderstorm background  
+          // Thunderstorm background and quote 
                   if (weatherBackground == "Thunderstorm") {
                   document.body.style.backgroundColor = 'grey';
                   document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
+                  document.getElementsByClassName("joke").innerText = "What kind of shorts do clouds wear? /n Thunderwear!";
                   }
-          // Rain background	  
+          // Rain background and quote	  
                   else if (weatherBackground == "Rain") {
                       document.body.style.backgroundColor = 'grey';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/grey.svg")`;
+                      document.getElementsByClassName("joke").innerText = "How does a spy avoid the rain? /n He goes undercover.";
                   } 
-          // Drizzle background        
+          // Drizzle background and quote        
                   else if (weatherBackground == "Drizzle") {
                       document.body.style.backgroundColor = 'green';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/green.svg")`;
+                      document.getElementsByClassName("joke").innerText = "What do you call a bear caught out in the rain? /n A drizzily bear.";
                   }
-          // Snow background	  
+          // Snow background and quote	  
                   else if (weatherBackground == "Snow") {
                       document.body.style.backgroundColor = 'pink';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/pink.svg")`;
+                      document.getElementsByClassName("joke").innerText = "The snowstorm arrived at a fortuitous moment. /n It was white on time.";
                   }
-          // Sunny background
+          // Sunny background and quote
                   else if (weatherBackground == "Clear") {
                       document.body.style.backgroundColor = 'yellow';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/yellow.svg")`;
+                      let joke = document.querySelector('.current .joke');
+                      joke.innertext = "It was so hot the other day that even the mosquitoes were dropping like flies.";
                   }
-          // Cloud background
+          // Cloud background and quote
                   else if (weatherBackground == "Clouds") {
                       document.body.style.backgroundColor = 'blue';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/blue.svg")`;
+                      document.getElementsByClassName("joke").innerText = "Why did the cloud stay at home? /n It was feeling under the weather.";
                   }
-          // Haze background
+          // Haze background and quote
                   else if (weatherBackground == "Haze") {
                       document.body.style.backgroundColor = 'purple';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/purple.svg")`;
+                      document.getElementsByClassName("joke").innerText ="If your mind is clouded or in a fog you may have mist some opportunities."
                   } 
-          // Fog background
+          // Fog background and quote
                   else if (weatherBackground == "Fog") {
                       document.body.style.backgroundColor = 'red';
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/red.svg")`;
+                      document.getElementsByClassName("joke").innerText ="If your mind is clouded or in a fog you may have mist some opportunities."
                   }
           // a default for any unknown terms not specified in the current API documentation
                   else {
                       document.body.style.backgroundColor = "dark grey";
                       document.body.style.backgroundImage = `url("../assets/images/backgrounds/default.svg")`;
+                      document.getElementsByClassName("joke").innerText ="Weather forecast for tonight: dark.";
                   }               
               });
       });
@@ -159,6 +169,7 @@ function getResults(query) {
           } else if (weatherBackground == "Drizzle") {
               document.body.style.backgroundColor = 'green';
               document.body.style.backgroundImage = `url("../assets/images/backgrounds/green.svg")`;
+              
           }
           // Snow background	  
           else if (weatherBackground == "Snow") {

@@ -132,10 +132,7 @@ Once the site has been deployed the sites loading/performance will be tested to 
 
 ### Unfixed bugs
 
-- currently no check error if the API is not working
-- Currently no validation on the search bar for entry
 - currently cities entered automatically default to their American version
-- Currently media query settings in the CSS document do not seem to apply to the JS implamented image.
 - Website requires a favicon
 
 
@@ -175,7 +172,7 @@ To copy the code to your own repository, complete the following steps:
 # Credits 
 This project could not have been created without the following:
 
-## Code 
+## Code Guidance
 - Tyler Potts https://www.youtube.com/watch?v=n4dtwWgRueI
 
 ## API
@@ -185,17 +182,36 @@ This project could not have been created without the following:
 
 ## Media
 
-The anow/sun/rain backgrounds.
-    - https://cdn.hipwallpaper.com/i/62/98/HolfGB.jpg
+Backgrounds
+- https://www.svgbackgrounds.com/#dragon-scales
 
-thunderstorm
-    - https://www.freepik.com/free-vector/background-with-rain-dark-sky_2095873.htm
+Weather puns
+- https://free-funny-jokes.com/weather-puns/
 
-mist
-    - https://www.freepik.com/free-vector/evening-fog-tops-trees-pine-forest_6804326.htm#page=1&query=fog%20trees&position=5
+## Development/Testing Validators
+GitPod IDE
+- gitpod.io
 
-cloud
-    - https://unsplash.com/photos/fC_RaKIC9ao
+To validate the colour contrast (WAI approved)
+- https://juicystudio.com/services/luminositycontrastratio.php
+
+Javascripts checker.
+- https://jshint.com/
+
+HTML validator
+- https://validator.w3.org/
+
+CSS
+- https://jigsaw.w3.org/css-validator/
+
+Favicon generator
+- https://https://favicon.io/ 
+
+Speed testing
+- https://gtmetrix.com
+
+Shrink picture without reducing quality
+- https://tinypng.com
 
 
 

@@ -45,11 +45,13 @@ body {
     font-size: 2em;
     font-weight: 500;
     margin-bottom: 5px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6)
 }
 
 .date {
     color: #FFF;
-    font-size: 1em;
+    font-size: 1.5em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6)
 }
 
 .temp {
@@ -80,7 +82,7 @@ body {
     text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
 }
 
-.wicon {
+.joke {
   color: #FFF;
   font-size: 1.5em;
   font-weight: 500;
@@ -120,8 +122,9 @@ body {
     border: none;
     cursor: pointer;
     background-color:  rgba(255, 255, 255, 0.007)  ;
-    color: black;
+    color: white;
     font-size: 1.8em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6)
   }
 
   /* media styles for standard enterprise tablets */
