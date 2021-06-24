@@ -66,7 +66,7 @@ The following evidence captures were collected when testing was conducted via th
 <p float="left">
 <img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/js19621result.PNG" width="600" height="400" />
 <img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/html19621result.PNG" width="600" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/css19621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/css19621result.PNG" width="600" height="200" />
 </p>
 
 ### Round Three - Testing on MVP

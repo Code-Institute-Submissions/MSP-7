@@ -69,7 +69,9 @@ The final site will appears as follows:
 
 ![multidevicesiteview](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/multidevice.PNG)
 
-- __Weather Page__
+ __Various Weather Pages__
+
+
 ![weatherpagethunderstom](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/thunderstorm.PNG)
 ![weatherpagerain](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/rain.PNG)
 ![weatherpagedrizzle](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/drizzle.PNG)
