@@ -146,7 +146,7 @@ function getResults(query) {
 			temp.innerHTML = `${Math.round(apiData.main.temp)}<span>°c</span>`;
 
 			let weather_el = document.querySelector('.current .weather');
-			weather_el.innerText = geoweather.weather[0].main;
+			weather_el.innerText = apiData.weather[0].main;
 			let weatherBackground = weather_el.textContent;
 
 			let hilow = document.querySelector('.hi-low');

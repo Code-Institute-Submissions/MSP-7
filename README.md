@@ -9,7 +9,6 @@ The Project will enable a user to:
 - Manually enter a city to search for weather results
 
 
-
 ## Benefits and Rational
 
 Such an application will:
@@ -61,27 +60,25 @@ The application must be clear and concise. It should display, at a minimun:
 - The high/low temperature for the day
 - A background that reflects the weather results without detracting from the text
 - Ability to search for a particular city, easily
+- A quirky comment or quote that matches the weather
 
 ![initialwireframe](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/weather_wireframe.png)
 
 # Final/Existing Feature Outcomes
 The final site will appears as follows:
 
-![multidevicesiteview]()
-
-
+![multidevicesiteview](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/multidevice.PNG)
 
 - __Weather Page__
-![weatherpagethunderstom]()
-![weatherpagerain]()
-![weatherpagedrizzle]()
-![weatherpagesnow]()
-![weatherpageclear]()
-![weatherpageclouds]()
-![weatherpagehaze]()
-![weatherpagefog]()
-![weatherpagedefault]()
-
+![weatherpagethunderstom](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/thunderstorm.PNG)
+![weatherpagerain](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/rain.PNG)
+![weatherpagedrizzle](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/drizzle.PNG)
+![weatherpagesnow](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/snow.PNG)
+![weatherpageclear](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/clear.PNG)
+![weatherpageclouds](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/clouds.PNG)
+![weatherpagehaze](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/haze.PNG)
+![weatherpagefog](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/fog.PNG)
+![weatherpagedefault](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/default.PNG)
 
 
 # Future Features to be Implemented
@@ -91,6 +88,7 @@ The final site will appears as follows:
 - Currently, the only error message on the site is generated on the back of the API response. 
     - Future improvement is to develop field validation on the search bar
     - Future improvement is to increase the range of error messages available 
+
 
 # Testing 
 
@@ -102,15 +100,15 @@ Note to Assessor: Due to GitPods behaviour surrounding links, their are numberou
 
 Once the site has been deployed the HTML code will be passed throught the official W3C validator for the HTML portions:
 
-![w3cvalidator]()
+![w3cvalidator](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/prodhtml.PNG)
 
 Once the site has been deployed the CSS code will be passed throught the official Jigsaw validator for the CSS portions:
 
-![jigsawvalidator]()
+![jigsawvalidator](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/prodcss.PNG)
 
 Once the site has been deployed the JavaScript code will be passed throught the official Jshint validator for the JavaScript portions:
 
-![jshintvalidator]()
+![jshintvalidator](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/prodjshint.PNG)
 
 All elements will be visually inspected to ensure all information has been correctly populated and loaded.
 
@@ -133,24 +131,23 @@ The site was deployed to GitHub pages.
 The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab
 
-![stepone]()
+![stepone](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/deploy1.PNG)
 
   - Scroll down to the GitHub Pages tab on the left side and select it
 
-![steptwp]()
+![steptwp](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/deploy2.PNG)
 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, click the Save button
 
-![stepthree]()
+![stepthree](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/deploy3.PNG)
 
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
     Note: It takes time to build the site, please wait 5-10 mins before clicking on the link to access the deployed site.
 
-![finallink]()
+![finallink](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/deploy4.PNG)
 
 The repository link can be found here - https://github.com/Sphere42/MSP-2
-
 
 
 ## Copying the Repository
@@ -158,17 +155,15 @@ The repository link can be found here - https://github.com/Sphere42/MSP-2
 To obtain a copy of the code for this project, complete the following steps:
 
 - Go to the code page of the project
-  ![copy1]()
+  ![copy1](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/copy1.PNG)
 
 - Select the "code" buttom in the top right hand corner
-  ![copy2]()
+  ![copy2](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/copy2.PNG)
 
 - From here the project code can either be
        Downloaded as a ZIP file
        Open with GitHub Desktop (if you have downloaded the app)
        Open with Visual Studio (if you have a copy of the program)
-
-
 
 
 # Credits 
