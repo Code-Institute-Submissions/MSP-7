@@ -189,7 +189,7 @@ function getResults(query) {
 			// Cloud background and quote
 			else if (weatherBackground == "Clouds") {
 				document.body.style.backgroundColor = 'blue';
-				document.body.style.backgroundImage = `url("..assets/images/backgrounds/blue.svg")`;
+				document.body.style.backgroundImage = `url("assets/images/backgrounds/blue.svg")`;
 				document.getElementById("joke-text").innerHTML = "Why did the cloud stay at home? \n It was feeling under the weather.";
 			}
 			// Haze background and quote
