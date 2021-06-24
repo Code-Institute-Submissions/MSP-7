@@ -6,7 +6,7 @@ The purpose of Milestone Project 2 is to create a simple weather application
 
 The Project will enable a user to:
 - See the weather for their current location by default on opening
-- Manually enter a city to search for weather results
+- Manually enter a location to search for weather results
 
 ## Benefits and Rational
 
@@ -58,7 +58,7 @@ The application must be clear and concise. It should display, at a minimun:
 - The current weather (text format)
 - The high/low temperature for the day
 - A background that reflects the weather results without detracting from the text
-- Ability to search for a particular city, easily
+- Ability to search for a particular location, easily
 - A quirky comment or quote that matches the weather
 
 ![initialwireframe](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/weather_wireframe.png)
@@ -84,10 +84,10 @@ The final site will appears as follows:
 
 
 # Future Features to be Implemented
-- Currently, there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A purposeful concent message will be needed. This message will need to specify the reqwuested data, what it will be utilised for, and if it will be stored any where.
+- Currently, there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A purposeful concent message will be needed. This message will need to specify the requested data, what it will be utilised for, and if it will be stored anywhere.
 - Currently, after searching for a location, the search bar will only clear after the user re-clicks on the field. 
     - Future improvement will be to clear this field once the requested data has populated into the relevant html fields.
-- Currently, the only error message on the site is generated on the back of the API response. 
+- Currently, the only error message on the site is generated on the basis of the API response. 
     - Future improvement is to develop field validation on the search bar
     - Future improvement is to increase the range of error messages available 
 
@@ -98,7 +98,7 @@ Full details and evidence of testing conducted throughout the SDLC of this proje
 
 ## Production Shakedown Pre Submission
 
-Note to Assessor: Due to GitPods behaviour surrounding links, their are numberous commit messages after the deployment that are very similar. This is due to a trial and error approach to get the image links to work in a "production Environment".
+Note to Assessor: Due to GitPods behaviour surrounding links, their are numerous commit messages after the deployment that are very similar. This is due to a trial and error approach required to get the image links to work in a "production Environment".
 
 Once the site has been deployed the HTML code will be passed throught the official W3C validator for the HTML portions:
 
@@ -120,10 +120,12 @@ Once the site has been deployed the site loading/performance will be tested to e
 
 ### Unfixed bugs
 
-- currently when a city is entered without a country code, the API automatically defaults to the American location
+- Currently when a city is entered without a country code, the API automatically defaults to the American location
         Workaround in place requesting the User enter City and Country code. There will be a future improvement developed to improve this process.
 - The searchbar retains the entered text until the user clicks on the bar to conduct another search.
-- When using the application on a mobile, upon search the application doesn't automatically "bounce" to the top of the screen. This doesn't occur on emulators, only real devices. Future improvement will be implemented to ensure the page displays from the top after searching.
+        Furture feature will clear the searchbar on submit
+- When using the application on a mobile, upon displaying the search result, the application doesn't automatically "bounce" to the top of the screen. This doesn't occur on emulators, only real devices. 
+- Future improvement will be implemented to ensure the page displays from the top after searching.
 
 # Deployment Process
 

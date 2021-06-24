@@ -207,8 +207,7 @@ The following are the results of the Luminosity Colour Contract Ratio Analysis. 
 
 ### Thunderstorm Background
 <p float="left">
-<img src="" width="600" height="400" />
-<img src="" width="600" height="400" />
+<img src="" />
 </p>
 
 ### Rain Background
