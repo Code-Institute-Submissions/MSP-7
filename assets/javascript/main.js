@@ -37,7 +37,6 @@ window.addEventListener("load", () => {
 					let weather_el = document.querySelector('.current .weather');
 					weather_el.innerText = geoweather.weather[0].main;
 					let weatherBackground = weather_el.textContent;
-					console.log(weatherBackground);
 
 					let hilow = document.querySelector('.hi-low');
 					hilow.innerText = `${Math.round(geoweather.main.temp_min)}°c / ${Math.round(geoweather.main.temp_max)}°c`;
@@ -147,9 +146,8 @@ function getResults(query) {
 			temp.innerHTML = `${Math.round(apiData.main.temp)}<span>°c</span>`;
 
 			let weather_el = document.querySelector('.current .weather');
-			weather_el.innerText = apiData.weather[0].main;
+			weather_el.innerText = geoweather.weather[0].main;
 			let weatherBackground = weather_el.textContent;
-			console.log(weatherBackground);
 
 			let hilow = document.querySelector('.hi-low');
 			hilow.innerText = `${Math.round(apiData.main.temp_min)}°c / ${Math.round(apiData.main.temp_max)}°c`;
@@ -206,7 +204,7 @@ function getResults(query) {
 			}
 			// a default for any unknown terms not specified in the current API documentation
 			else {
-				document.body.style.backgroundColor = "dark grey";
+				document.body.style.backgroundColor = "black";
 				document.body.style.backgroundImage = `url("assets/images/backgrounds/default.svg")`;
 				document.getElementById("joke-text").innerHTML = "Weather forecast for tonight: dark.";
 			}

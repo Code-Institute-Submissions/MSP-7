@@ -13,7 +13,7 @@ The Project will enable a user to:
 ## Benefits and Rational
 
 Such an application will:
--	Enable the user to view Local weather
+-	Enable the user to view Local weather (geolocation)
 - Enable the User to search for a city and;
     - view the chosen citys local weather
     - view the chosen citys local date
@@ -56,8 +56,8 @@ The following are a list of design aspects that must be maintained throughout th
 
 The application must be clear and concise. It should display, at a minimun:
 - The location
-- The local time
-- The days weather (text format)
+- The local date
+- The current weather (text format)
 - The high/low temperature for the day
 - A background that reflects the weather results without detracting from the text
 - Ability to search for a particular city, easily
@@ -85,19 +85,20 @@ The final site will appears as follows:
 
 
 # Future Features to be Implemented
-- Currently there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A purposeful concent message will be needed. This message will need to specify the reqwuested data, what it will be utilised for, and if it will be stored any where.
-- Currently, after searching for a city, the search bar will only clear after the user re-clicks on the field. 
+- Currently, there is a default browser message requesting permission to know the users location. In order for the application to be GDPR compliant, A purposeful concent message will be needed. This message will need to specify the reqwuested data, what it will be utilised for, and if it will be stored any where.
+- Currently, after searching for a location, the search bar will only clear after the user re-clicks on the field. 
     - Future improvement will be to clear this field once the requested data has populated into the relevant html fields.
-- Currently the only error message on the site is generated on the back of the API response. 
+- Currently, the only error message on the site is generated on the back of the API response. 
     - Future improvement is to develop field validation on the search bar
-    - Future improvement is to increase the range of errormessages available 
-
+    - Future improvement is to increase the range of error messages available 
 
 # Testing 
 
 Full details and evidence of testing conducted throughout the SDLC of this project will be maintained in a seperate document called testing.md
 
 ## Production Shakedown Pre Submission
+
+Note to Assessor: Due to GitPods behaviour surrounding links, their are numberous commit messages after the deployment that are very similar. This is due to a trial and error approach to get the image links to work in a "production Environment".
 
 Once the site has been deployed the HTML code will be passed throught the official W3C validator for the HTML portions:
 
@@ -120,11 +121,10 @@ Once the site has been deployed the site loading/performance will be tested to e
 
 ### Unfixed bugs
 
-- currently cities entered automatically default to their American version
+- currently when a city is entered without a country code, the API automatically defaults to the American location
         Workaround in place requesting the User enter City and Country code. There will be a future improvement developed to improve this process.
 - Website requires a favicon
-
-
+- When using the application on a mobile, upon search the application doesn't automatically "bounce" to the top of the screen. This doesn't occur on emulators, only real devices. Future improvement will be implemented to ensure the page displays from the top after searching.
 
 # Deployment Process
 
@@ -135,7 +135,7 @@ The steps to deploy are as follows:
 
 ![stepone]()
 
-  - Scroll down to the GitHub Pages section, The latest GitHub version now maintains the GitHub Pages in a new page, click the "Check it out here!" page to be redirected. 
+  - Scroll down to the GitHub Pages tab on the left side and select it
 
 ![steptwp]()
 
@@ -154,8 +154,21 @@ The repository link can be found here - https://github.com/Sphere42/MSP-2
 
 
 ## Copying the Repository
-To copy the code to your own repository, complete the following steps:
-- 
+
+To obtain a copy of the code for this project, complete the following steps:
+
+- Go to the code page of the project
+  ![copy1]()
+
+- Select the "code" buttom in the top right hand corner
+  ![copy2]()
+
+- From here the project code can either be
+       Downloaded as a ZIP file
+       Open with GitHub Desktop (if you have downloaded the app)
+       Open with Visual Studio (if you have a copy of the program)
+
+
 
 
 # Credits 
@@ -167,7 +180,7 @@ This project could not have been created without the following:
 ## API
 - Open Weather Map site and APIs
       https://home.openweathermap.org/
-
+      This API has a restriction of 60 requests per minute and 1,000,000 requests per month
 
 ## Media
 
@@ -179,7 +192,7 @@ Weather puns
 
 ## Development/Testing Validators
 GitPod IDE
-- gitpod.io
+- https://gitpod.io
 
 To validate the colour contrast (WAI approved)
 - https://juicystudio.com/services/luminositycontrastratio.php
@@ -204,8 +217,6 @@ Speed testing
 
 Reduce picture size without effecting quality
 - https://tinypng.com
-
-
 
 ## Additional Thanks
 
