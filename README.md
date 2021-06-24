@@ -8,7 +8,6 @@ The Project will enable a user to:
 - See the weather for their current location by default on opening
 - Manually enter a city to search for weather results
 
-
 ## Benefits and Rational
 
 Such an application will:
@@ -18,7 +17,6 @@ Such an application will:
     - view the chosen citys local date
 - Have a new background on the basis of the weather results
 - Display a quirky comment or joke that changes inline with the weather results
-
 
 ## User Stories
 
@@ -48,6 +46,7 @@ Functional Developer stories:
 -	As a Developer I want to be able to easily deploy this site to the cloud
 *Interpreted from the Assignment document*
 
+
 # Functional Requirements Scope
 
 ## Design Consistancies
@@ -63,6 +62,7 @@ The application must be clear and concise. It should display, at a minimun:
 - A quirky comment or quote that matches the weather
 
 ![initialwireframe](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/weather_wireframe.png)
+
 
 # Final/Existing Feature Outcomes
 The final site will appears as follows:
@@ -116,12 +116,11 @@ All visual elements have been validated by the WAI approved Luminosity Colour Co
 
 Once the site has been deployed the site loading/performance will be tested to ensure there are no undue delays for the User
 
-
 ### Unfixed bugs
 
 - currently when a city is entered without a country code, the API automatically defaults to the American location
         Workaround in place requesting the User enter City and Country code. There will be a future improvement developed to improve this process.
-- Website requires a favicon
+- The searchbar retains the entered text until the user clicks on the bar to conduct another search.
 - When using the application on a mobile, upon search the application doesn't automatically "bounce" to the top of the screen. This doesn't occur on emulators, only real devices. Future improvement will be implemented to ensure the page displays from the top after searching.
 
 # Deployment Process
@@ -149,7 +148,6 @@ The steps to deploy are as follows:
 
 The repository link can be found here - https://github.com/Sphere42/MSP-2
 
-
 ## Copying the Repository
 
 To obtain a copy of the code for this project, complete the following steps:
@@ -164,7 +162,6 @@ To obtain a copy of the code for this project, complete the following steps:
        Downloaded as a ZIP file
        Open with GitHub Desktop (if you have downloaded the app)
        Open with Visual Studio (if you have a copy of the program)
-
 
 # Credits 
 This project could not have been created without the following:
@@ -205,13 +202,16 @@ CSS
 - https://jigsaw.w3.org/css-validator/
 
 Favicon generator
-- https://https://favicon.io/ 
+- https://favicon.io/ 
 
 Speed testing
 - https://gtmetrix.com
 
 Reduce picture size without effecting quality
 - https://tinypng.com
+
+GIFs for test evidence were created using ScreentoGif
+- https://www.screentogif.com/
 
 ## Additional Thanks
 

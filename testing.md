@@ -35,9 +35,9 @@ The following evidence captures were collected when testing was conducted via th
                 - creation of humourous sayings/texts to be updating based on api weather results (temp or description)
 
 <p float="left">
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/js%2013621%20result.PNG" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/html%2013621%20result.PNG" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/css%2013621%20result.PNG" width="500" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/js13621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/html13621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/css13621result.PNG" width="600" height="400" />
 </p>
 
 
@@ -64,9 +64,9 @@ The following evidence captures were collected when testing was conducted via th
                 - creation of humourous sayings/texts to be updating based on api weather results (temp or description)
 
 <p float="left">
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/js19621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/html19621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/css19621result.PNG" width="600" height="400" />
 </p>
 
 ### Round Three - Testing on MVP
@@ -91,9 +91,9 @@ The following evidence captures were collected when testing was conducted via th
                 - validation on the search field itself (current error based on api results)
 
 <p float="left">
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/js22621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/html22621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/css22621result.PNG" width="600" height="400" />
 </p>
 
 ### Round Four - Final Functional/regression Testing before UAT
@@ -120,9 +120,9 @@ The following evidence captures were collected when testing was conducted via th
                         Note, as API validation has been implemented, this item has reduced priority and will be developed in the future
 
 <p float="left">
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/" width="500" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/js23621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/html23621result.PNG" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/code/css23621result.PNG" width="600" height="400" />
 </p>
 
 ## Compatability testing:
@@ -133,14 +133,14 @@ __iphone6/7/8 plus:__
 Device width: 414px
 
 <p float="left">
-<img src="" width="150" height="300" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/iphone678.gif"/>
 </p>
 
 __samsung galaxy s5:__
 Device width 360px
 
 <p float="left">
-<img src="" width="150" height="300" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/samsungg5.gif"/>
 </p>
 
 __Moto G4:__
@@ -148,7 +148,7 @@ __Moto G4:__
 Device width 360px
 
 <p float="left">
-<img src="" width="150" height="300" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/motog4.gif"/>
 </p>
 
 __Pixel 2:__
@@ -156,7 +156,7 @@ __Pixel 2:__
 Device width 411px
 
 <p float="left">
-<img src="" width="150" height="300" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/pixel2.gif"/>
 </p>
 
 __iPad:__
@@ -164,42 +164,38 @@ __iPad:__
 Device width 1024px
 
 <p float="left">
-<img src="" width="300" height="400" />
-</p>
-
-__Surface Duo:__
-
-Device width 540px
-
-<p float="left">
-<img src="" width="250" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/ipad.gif"/>
 </p>
 
 __Desktop Chrome:__
 
 <p float="left">
-<img src="" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/chrome.gif" width="600" height="400" />
 </p>
 
 __Desktop Firefox:__
 
 <p float="left">
-<img src="" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/firefox.gif" width="600" height="400" />
 </p>
 
 __Desktop Edge:__
 
 <p float="left">
-<img src="" width="600" height="400" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/device/MSedge.gif" width="600" height="400" />
 </p>
 
 ## User Acceptance Testing:
 
 Due to the size and timelines of this project, there will not be a structured Alpha/Beta stage of UAT. Instead, a selection of volunteers will conduct a time boxed exploratory session. After which feedback will be collated and transformed into bugs, improvements or new features.
 
-
 The following is the feedback provided from the end users from their exploratory test session:
-
+ - It's great that the permission box pops up and I have a choice about providing my data
+ - The Application is clean and clear, very simple to use
+ - The jokes are corney but funny, would be of benefit to have more.
+ - While the searchbar clears when I click on it to conduct a new search, it would be cleaner if it cleard on submission
+ - On the Mobile phone, the page doesn't refocuss to the top after search has been submitted, causing additional user clicks...
+ - It does what it says on the tin
 
 ## Performance Testing:
 The following evidence are the results from the performance speed tests conducted on the deployed site:
