@@ -200,7 +200,7 @@ The following is the feedback provided from the end users from their exploratory
 ## Performance Testing:
 The following evidence are the results from the performance speed test conducted on the deployed site:
 <p float="left">
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/speedtest.png" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/speedtest.PNG" />
 </p>
 
 ## WAI Luminosity Colour Contrast Ratio Assessment
