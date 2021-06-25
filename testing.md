@@ -251,3 +251,34 @@ The following are the results of the Luminosity Colour Contract Ratio Analysis. 
 <p float="left">
 <img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/waicolour/default-results.png" />
 </p>
+
+## Production Shakedown Pre Submission
+
+Note to Assessor: Due to GitPods behaviour surrounding links, (and unexpected CORBS errors) there are numerous commit messages directly after the deployment that are very similar. This is due to the need to push all changes to production to verify if the implemented fixes were successful.
+
+Once the web application had been deployed the HTML code was passed through the official W3C validator for the HTML portions:
+
+![w3cvalidator](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/prodhtml.PNG)
+
+Once the web application had been deployed the CSS code was passed through the official Jigsaw validator for the CSS portions:
+
+![jigsawvalidator](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/prodcss.PNG)
+
+Once the web application had been deployed the JavaScript code was passed through the official Jshint validator for the JavaScript portions:
+
+![jshintvalidator](https://github.com/Sphere42/MSP-2/blob/master/assets/images/readme/prodjshint.PNG)
+
+All elements have been visually inspected to ensure all information has been correctly populated and loaded.
+
+All visual elements have been validated by the WAI approved Luminosity Colour Contrast Ratio Analysis checker. These results are located within the testing document.
+
+Once the web application has been deployed the site loading/performance will be tested to ensure there are no undue delays for the User
+
+### Unfixed bugs
+
+- Currently when a city is entered without a country code, the API automatically defaults to the American location
+        Workaround in place requesting the User enter City and Country code. There will be a future improvement developed to improve this process
+- The searchbar retains the entered text until the user clicks on the bar to conduct another search
+        Furture feature will clear the searchbar on submit
+- When using the application on a mobile, upon displaying the search result, the application doesn't always automatically "bounce" to the top of the screen. This doesn't occur on emulators, or on a Samsung Galaxy Note 20 Ultra 
+        Future improvement will be implemented to ensure the page displays from the top after searching
