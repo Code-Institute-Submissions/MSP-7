@@ -1,11 +1,11 @@
 # Testing 
 
-The following sections are the results of the testing throughout the SDLC for MSP-2. This information has been included in a separate document in order to keep the README document uncluttered.
+The following sections are the results of the testing throughout the software development lifecycle for MSP-2. This information has been included in a separate document in order to keep the README document uncluttered.
 
 ## Initial Unit Testing:
 The following evidence captures were collected when testing was conducted throughout development of this project.
 
-### Round One - Testing on MVP
+### Round One - Testing on pre-MVP
 13/06/2021 @ 18:08
         Typos in the JS when processed via the JShint validator
                 compatability issue which required "/*jshint esversion: 6 */" to be added to the start of the JS file
@@ -22,8 +22,8 @@ The following evidence captures were collected when testing was conducted via th
                 Basic HTML and CSS settings, Javascript enabled for initial geo location of weather, along with basic search (using either enter or left click to submit)
         Test Results:
                 Initial location (using long/lat from browser) is operational if user allows
-                Ability to search for a city (user enter to submit) partially successful.
-                Ability to search for a city (user left mouse click to submit) partially successful.
+                Ability to search for a city (using enter button to submit) partially successful.
+                Ability to search for a city (using left mouse click to submit) partially successful.
                 Currently any City name entered will default to the American location. 
                         Need to implement a way to locate nearest match to user browser location? Or based on history?
 
@@ -46,11 +46,11 @@ The following evidence captures were collected when testing was conducted via th
         Functionality available:
                 Basic HTML and CSS settings, 
                 Javascript enabled for initial geo location of weather, 
-                Basic search (using either enter or left click to submit)
+                Basic search (using either the enter key or left mouse click to submit)
                 Background updates based on weather main content
         Test Results:
                 Initial location (using long/lat from browser) is operational if user allows - message on page if geolocation request declined
-                Ability to search for a city (user enter to submit) 
+                Ability to search for a city (using enter key to submit) 
                 Ability to search for a city (user left mouse click to sumbit) 
                 Invalid submittion does not currently produce an error
                 Still exists -  any City name entered will default to the American location. 
@@ -74,13 +74,13 @@ The following evidence captures were collected when testing was conducted via th
         Functionality available:
                 Basic HTML and CSS settings, 
                 Javascript enabled for initial geo location of weather, 
-                Basic search (using either enter or left click to submit)
-                Validation on the API response, limited to submet text confirmation alert
+                Basic search (using either the enter key or left mouse click to submit)
+                Validation on the API response, limited to submit text confirmation alert
                 Background updates based on weather main content
                 Submit field clears on focus
         Test Results:
                 Initial location (using long/lat from browser) is operational if user allows - message on page if geolocation request declined
-                Ability to search for a city (user enter to submit) 
+                Ability to search for a city (using enter key to submit) 
                 Ability to search for a city (user left mouse click to sumbit) 
                 Invalid submittion returns an error, this error is based on the API response and not field validation
                 Still exists -  any City name entered will default to the American location. 
@@ -101,15 +101,15 @@ The following evidence captures were collected when testing was conducted via th
         Functionality available:
                 Basic HTML and CSS settings, 
                 Javascript enabled for initial geo location of weather, 
-                Basic search (using either enter or left click to submit)
-                Validation on the API response, limited to submet text confirmation alert
+                Basic search (using either the enter key or left mouse click to submit)
+                Validation on the API response, limited to submit text confirmation alert
                 Background updates based on weather main content
                 Submit field clears on focus
                 Humourous quote populates based on the weather description
                 
         Test Results:
                 Initial location (using long/lat from browser) is operational if user allows - message on page if geolocation request declined
-                Ability to search for a city (user enter to submit) 
+                Ability to search for a city (using enter key to submit) 
                 Ability to search for a city (user left mouse click to sumbit) 
                 Invalid submittion returns an error, this error is based on the API response and not field validation
                 Still exists -  any City name entered will default to the American location. 
@@ -194,12 +194,14 @@ The following is the feedback provided from the end users from their exploratory
  - The Application is clean and clear, very simple to use
  - The jokes are corney but funny, would be of benefit to have more.
  - While the searchbar clears when I click on it to conduct a new search, it would be cleaner if it cleard on submission
- - On the Mobile phone, the page doesn't refocuss to the top after search has been submitted, causing additional user clicks...
+ - On the Mobile phone, the page doesn't refocus to the top after search has been submitted, causing additional user clicks...
  - It does what it says on the tin
 
 ## Performance Testing:
-The following evidence are the results from the performance speed tests conducted on the deployed site:
-
+The following evidence are the results from the performance speed test conducted on the deployed site:
+<p float="left">
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/speedtest.png" />
+</p>
 
 ## WAI Luminosity Colour Contrast Ratio Assessment
 
@@ -232,7 +234,7 @@ The following are the results of the Luminosity Colour Contract Ratio Analysis. 
 
 ### Cloud Background
 <p float="left">
-<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/waicolour/cloud-results.png" />
+<img src="https://github.com/Sphere42/MSP-2/blob/master/assets/images/testing/waicolour/clouds-results.png" />
 </p>
 
 ### Haze Background
