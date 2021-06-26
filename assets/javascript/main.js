@@ -10,7 +10,6 @@ const api = {
 window.addEventListener("load", () => {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition((position) => {
-			console.log(position);
 			let longitude = position.coords.longitude;
 			let latitude = position.coords.latitude;
 
@@ -23,7 +22,6 @@ window.addEventListener("load", () => {
 					return response.json();
 				})
 				.then((geoweather) => {
-					console.log(geoweather);
 					let city = document.querySelector('.location .city');
 					city.innerText = `${geoweather.name}, ${geoweather.sys.country}`;
 
@@ -131,7 +129,6 @@ function getResults(query) {
 
 	// The following instructions breakdown the API response and populate the information onto the GUI
 	function displayResults(apiData) {
-		console.log(apiData);
 
 		if (apiData.cod == "200") {
 
